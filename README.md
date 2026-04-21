@@ -1,9 +1,6 @@
 # FTLE-Guided Atmospheric River Perturbation
 
 Research code for identifying optimal cloud seeding locations to reduce landfalling Atmospheric River (AR) precipitation using the [Microsoft Aurora](https://github.com/microsoft/aurora) weather model and Finite-Time Lyapunov Exponents (FTLE).
-
-**Best result:** 5.21% IVT reduction at the California coast; site at 30.8°N, 166.5°E (2022-12-24 12Z AR event, 72–84h forecast).
-
 ---
 
 ## Repository Structure
@@ -22,31 +19,6 @@ aurora-ar-perturbation/
 │   ├── plot_single_timestep.py      # Standalone timestep visualization
 │   └── cloud_seeding_perturbation_logic.md  # Physics notes
 └── README.md
-```
-
----
-
-## Setup
-
-### Requirements
-
-- Python >= 3.10
-- CUDA-capable GPU (Aurora inference requires GPU)
-- [Microsoft Aurora](https://github.com/microsoft/aurora): `pip install microsoft-aurora`
-- ERA5 data (see Data section below)
-
-### Install the custom packages
-
-```bash
-pip install -e packages/aurora-seeding
-pip install -e packages/ftle-perturbation
-pip install -e packages/ftle_calculation
-```
-
-### Install PyPI dependencies
-
-```bash
-pip install torch numpy xarray pandas matplotlib cartopy scipy
 ```
 
 ---
@@ -91,8 +63,6 @@ Physically consistent cloud seeding perturbations applied to Aurora model state.
 ```python
 from aurora_seeding import apply_seeding, apply_physically_consistent_cloud_seeding
 ```
-
-Key parameters: seeding layers (hPa), freeze efficiency, fallout fraction, RH threshold.
 
 ### `ftle-perturbation`
 FTLE computation, candidate scoring, and Aurora rollout with perturbations.
