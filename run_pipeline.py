@@ -1,19 +1,6 @@
 """
 FTLE-Guided Atmospheric River Perturbation Pipeline
 ====================================================
-Reproduces the cloud-seeding experiment from:
-
-  "FTLE-Guided Atmospheric River Perturbation via Aurora"
-
-Case study: 2022-12-24 12Z AR event, ~72-84 h forecast horizon.
-Model:       Microsoft Aurora pretrained (0.25 deg), ERA5 reanalysis input.
-
-Usage
------
-    python run_pipeline.py
-
-All user-configurable settings are in the CONFIG block below.
-"""
 
 # ============================================================================
 # CONFIG  —  edit these paths and parameters before running
