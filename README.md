@@ -122,17 +122,3 @@ ftle_field, metadata = compute_ftle(
     backward=True,        # backward FTLE = attracting LCS
 )
 ```
-
----
-
-## Case Study
-
-| Parameter | Value |
-|---|---|
-| AR event | 2022-12-24 12Z |
-| Forecast horizon | 72–84h (steps 10–12) |
-| Model | Microsoft Aurora 0.25° pretrained |
-| Input | ERA5 reanalysis (two time steps: t−6h, t0) |
-| IVT threshold | 500 kg/m/s |
-| Best single site | 30.8°N, 166.5°E (step 0) |
-| IVT reduction | 5.21% overall; ~24% of above-threshold area |
