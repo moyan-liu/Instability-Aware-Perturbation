@@ -26,19 +26,6 @@ aurora-ar-perturbation/
 
 ERA5 reanalysis data is required but **not included** in this repository.
 
-
-## Pipeline Overview
-
-The notebook (`notebooks/perturb_paper.ipynb`) runs in 7 steps:
-
-1. **Data Preparation** — Load ERA5, build Aurora input batch
-2. **Cloud Seeding Setup** — Define seeding parameters (layers, efficiency, RH threshold)
-3. **Control Forecast** — Run unperturbed Aurora rollout (14 × 6h steps = 84h), compute IVT
-4. **FTLE-Guided Site Selection** — Score candidate sites using FTLE ridges, jet flanks, and AR mask
-5. **Empirical Testing** — Test each candidate individually for IVT reduction at California coast
-6. **Combination Optimization** — Find best multi-site seeding combinations
-7. **Visualization** — IVT maps, time series, good vs. bad site comparison
-
 ---
 
 ## Custom Packages
