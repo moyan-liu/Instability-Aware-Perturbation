@@ -79,3 +79,10 @@ ftle_field, metadata = compute_ftle(
     backward=True,        # backward FTLE = attracting LCS
 )
 ```
+## Citation
+
+If you use this repository or build on this workflow, please cite:
+
+**Instability-Aware Steering of an Extreme Atmospheric River in an AI Weather Foundation Model**  
+Moyan Liu, Qin Huang, Upmanu Lall  
+arXiv:2604.18906 [physics.ao-ph]
