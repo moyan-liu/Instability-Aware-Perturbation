@@ -25,21 +25,8 @@ aurora-ar-perturbation/
 
 ## Data
 
-ERA5 reanalysis data is required but **not included** in this repository (too large).
+ERA5 reanalysis data is required but **not included** in this repository.
 
-You need daily NetCDF files in a directory (e.g. `data/era5_batch/`):
-
-| File | Variables |
-|---|---|
-| `static.nc` | `z` (orography), `slt` (soil type), `lsm` (land-sea mask) |
-| `YYYY-MM-DD-surface-level.nc` | `t2m`, `u10`, `v10`, `msl` |
-| `YYYY-MM-DD-atmospheric.nc` | `t`, `u`, `v`, `q`, `z` on pressure levels |
-
-Download via the [CDS API](https://cds.climate.copernicus.eu/) at 0.25° resolution. For the 2022-12-24 AR case study, you need data from 2022-12-20 to 2023-01-15.
-
-Update the `download_path` variable in the notebook (Cell 1.3) to point to your data directory.
-
----
 
 ## Pipeline Overview
 
