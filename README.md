@@ -15,8 +15,6 @@ aurora-ar-perturbation/
 │   └── ftle_calculation/            # GPU-accelerated FTLE computation
 ├── scripts/
 │   ├── ca_boundary.py               # California coastal boundary utilities
-│   ├── plot_single_timestep.py      # Standalone timestep visualization
-│   └── cloud_seeding_perturbation_logic.md  # Physics notes
 └── README.md
 ```
 
